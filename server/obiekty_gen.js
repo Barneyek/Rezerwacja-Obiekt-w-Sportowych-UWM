@@ -15,7 +15,7 @@ if (Obiekty.find().count() === 0) {
         stan: 'gotowy'
     });
     Obiekty.insert({
-        numer: 4,
+        nr: 4,
         nazwa: 'Kompleks boisk sportowych "Nad Kortówką',
         stan: 'gotowy'
     });
