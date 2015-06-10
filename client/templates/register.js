@@ -15,6 +15,7 @@ Template.register.events({
                     typ: 'klient'
                 }
             });
+	alert("Użytkownik "+ data.login+" został zarejestrowany.");
             Router.go('login');
         }
         else{
