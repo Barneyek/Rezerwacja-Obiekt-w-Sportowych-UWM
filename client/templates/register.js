@@ -13,14 +13,21 @@ Template.register.events({
                 password: data.password,
                 profile: {
                     typ: 'klient'
-                }
+                }},
+		function (err) {
+                if (err) {
+                    alert("Podany login już istnieje w bazie");
+                } else {
+                    	alert("Użytkownik "+ data.login+" został zarejestrowany.");
+            		Router.go('login');
+			}
+		
             });
-	alert("Użytkownik "+ data.login+" został zarejestrowany.");
-            Router.go('login');
+
         }
         else{
             alert('Podane hasła się różnią');
         }
-        
+
     }
 });
