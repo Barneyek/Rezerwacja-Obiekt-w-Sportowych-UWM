@@ -16,7 +16,6 @@ Template.reservationForm2.events({
         var obiekt = $('#NrObiektu').val();
         var data = $('#my-datepicker').val();
         var godzina = $('#time').val();
-	var cena = $('#price').val();	
         var username=Meteor.user().username;
         var rezerwacja = Rezerwacje.findOne({
             nrobiektu: obiekt,
