@@ -36,7 +36,7 @@ Template.reservationForm2.events({
                 godzina: godzina,
                 username:username
             });
-            alert('Rezerwacja obiektu przebiegła, pomyślnie obiekt : '+obiekt+' godzina :'+ godzina+ ' data : '+data);
+            alert('Rezerwacja obiektu przebiegła, pomyślnie obiekt : '+obiekt+' godzina: '+ godzina+ ' data:  '+data);
         } else {
 
             alert("Obiekt " + obiekt + " jest juz zarezerwowany w dniu " + data + " o godzinie " + godzina + ". Prosimy wybrać inny obiekt, bądź inne parametry czasowe")

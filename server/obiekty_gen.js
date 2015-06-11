@@ -36,7 +36,7 @@ if (Obiekty.find().count() == 0) {
     });
     Obiekty.insert({
         nr: 8,
-        nazwa: 'Obiekt sportowy (ul. Żołnierska 14)',
+        nazwa: 'Hala Sportowa (ul. Żołnierska 14)',
       	cena: '70 zł',
     });
  Obiekty.insert({
