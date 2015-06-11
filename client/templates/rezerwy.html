@@ -1,0 +1,16 @@
+<template name="rezerwy">
+<body>
+<center><img src="http://www.uwm.edu.pl/swfis/templates/GGrass-TAG/images/logo.png"/></center>
+    <div class="container">
+        <div class="row">
+            {{> nav}}
+        </div>
+        <div class="row">
+		<h2>Istniejace rezerwacje:</h2>
+	
+            {{#each getExampleReservations}} {{> rezerwy2}} {{/each}}
+			
+        </div>
+    </div>
+	</body>
+</template>
