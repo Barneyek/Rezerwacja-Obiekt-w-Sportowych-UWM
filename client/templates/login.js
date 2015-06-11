@@ -1,14 +1,25 @@
-Template.login.events = {
-    'submit form': function (e) {
-        e.preventDefault();
-        var username = document.getElementById('inputLogin').value;
-        var password = document.getElementById('inputPassword').value;
-        Meteor.loginWithPassword(username,password);
-        
+Template.login.events ({
+    'click #login-button': function (x, y) {
+        x.preventDefault();
+        var username = $("#login-username").val(),
+            password = $("#login-password").val();
+        Meteor.loginWithPassword(username,password,function (błąd) {
+	    if (błąd)
+                alert("Błąd, użytkownik nie istnieje");
+            else {
+                alert("Zalogowano pomyślnie");
+                Router.go("home");
+            }
+        });
+        return false;
+    }
+});
+       
+/* 
         if (Meteor.userId() != 0)
             Router.go('home');
         else
-            alert('Hola!. Zalogój sie.');
+            alert('Najpierw musisz się zalogować.');
     }
 
-}
+}*/

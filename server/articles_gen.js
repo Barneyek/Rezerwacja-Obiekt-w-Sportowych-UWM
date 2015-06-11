@@ -1,7 +1,7 @@
-if (Articles.find().count() === 0) {
+if (Articles.find().count() == 0) {
     Articles.insert({
         tytul: ' Sekcje sportowe',
-        tresc: ' Sekcje sportowe (naboru do sekcji dokonują poszczególni trenerzy)  :'
+        tresc: ' Sekcje sportowe( naboru do sekcji dokonują poszczególni trenerzy), Zajęcia rozpoczynają się w drugim tygodniu semestru!!! '
  });
 
     Articles.insert({
